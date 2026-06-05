@@ -1,0 +1,116 @@
+.wishlist_card {
+    display: grid;
+    grid-template-columns:
+        80px 120px 1.5fr 120px 160px 120px;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.wishlist_card_icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.wishlist_card_icon:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+
+
+.wishlist_card_img {
+    width: 100px;
+    height: 100px;
+}
+
+.wishlist_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wishlist_card_title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.wishlist_card_name {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", Arial, sans-serif;
+    color: var(--dark-color);
+}
+
+.wishlist_card_description {
+    display: block;
+    font-size: 15px;
+    line-height: 1.8;
+    color: gray;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+
+
+.wishlist_card_price,
+.wishlist_card_total_price {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dark-color);
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.wishlist_card_input {
+    width: 140px;
+    height: 54px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wishlist_input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+    .wishlist_card {
+        grid-template-columns: 1fr;
+        text-align: center;
+
+        padding: 40px 20px;
+    }
+
+    .wishlist_card_title {
+        text-align: center;
+    }
+
+    .wishlist_card_img {
+        margin: 0 auto;
+    }
+
+    .wishlist_card_input {
+        margin: 0 auto;
+    }
+
+    .wishlist_card_icon {
+        margin: 0 auto;
+    }
+
+}

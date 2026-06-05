@@ -1,0 +1,20 @@
+.horizontal_scroll{
+    display:flex;
+    align-items:center;
+    
+    margin-top:40px;
+}
+
+.horizontal_scroll_line{
+    flex:1;
+    height:15px;
+    background:#f1f1f1;
+    
+}
+.horizontal_scroll_btn{
+    height: 15px;
+    background:#f1f1f1;
+    border: none;
+    font-family: 500;
+    font-size: 15px;
+}

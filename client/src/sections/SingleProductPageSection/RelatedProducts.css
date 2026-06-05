@@ -1,0 +1,38 @@
+.related_product_grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 25px;
+    margin-bottom: 100px;
+}
+.related_product_about{
+    display: block;
+    text-align: center;
+}
+.related_product_about_title{
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    font-family: "Lora", Georgia, serif;
+    font-style: italic;
+    color: #82ae46;
+    font-weight: 400;
+}
+.related_product_about_main_title{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.5;
+    margin-bottom: 1.5rem ;
+    margin-top:1.5rem;
+}
+.related_product_about_info{
+    margin-bottom:50px;
+        font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray;
+    font-family: "Poppins", Arial, sans-serif;
+}

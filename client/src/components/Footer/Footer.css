@@ -1,0 +1,221 @@
+.footer {
+    position: relative;
+    padding-top: 100px;
+
+}
+
+.scroll_top_btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--white);
+    border: none;
+    color: var(--white);
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+.scroll_top_btn_icon {
+    animation: 1.6s ease infinite weel-up-down;
+
+}
+
+@keyframes weel-up-down {
+    100% {
+        margin-top: 1px;
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    0% {
+        margin-top: 20px;
+        opacity: 0;
+    }
+}
+
+.footer_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.footer_brand_title,
+.footer_menu_title,
+.footer_help_title,
+.footer_contact_title {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--dark-color);
+    font-style: normal;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.footer_brand_away {
+    font-size: 14px;
+    color: var(--dark-color);
+    line-height: 1.8;
+    font-weight: 400;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.footer_brand_icon_grid {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 80px;
+
+}
+
+.footer_brand_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.02);
+
+}
+
+.footer_brand_icons_size {
+    font-size: 24px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.footer_menu_item {
+    color: #000000;
+    line-height: 1.8;
+    font-weight: 400;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 14px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.footer_help_section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+
+.footer_help_section_left_title,
+.footer_help_section_right_title,
+.footer_contact_section_right_info {
+    color: #000000;
+    line-height: 1.8;
+    font-weight: 400;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 14px;
+   margin-bottom: 20px;
+}
+
+.footer_contact_section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer_contact_section_left_icons {
+    line-height: 1.8;
+    font-weight: 400;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 55px;
+}
+
+.footer_contact_section_left_icon_phone {
+    line-height: 1.8;
+    font-weight: 400;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.footer_contact_section_left_icon_envelope {
+    line-height: 1.8;
+    font-weight: 400;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 14px;
+}
+
+.footer_copy {
+    text-align: center;
+    margin: 100px auto;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: var(--dark-color);
+}
+
+.footer_heart {
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: var(--dark-color);
+    margin: 0 3px;
+}
+
+.footer_copy_colorlib {
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+    font-family: "Poppins", Arial, sans-serif;
+    color: var(--primary-color);
+    margin: 0 3px;
+}
+
+@media (max-width: 992px) {
+
+    .footer_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .footer_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding-top: 60px;
+    }
+
+    .footer_copy {
+        margin: 60px auto;
+        font-size: 13px;
+    }
+
+    .scroll_top_btn {
+        width: 50px;
+        height: 50px;
+        top: -25px;
+    }
+
+    .footer_brand_icon_grid {
+        margin-top: 30px;
+    }
+
+}

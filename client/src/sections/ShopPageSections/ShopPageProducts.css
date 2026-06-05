@@ -1,0 +1,24 @@
+.shoppage_grid{
+   display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding-top: 50px;
+}
+@media (max-width: 992px){
+
+    .shoppage_grid{
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+@media (max-width: 576px){
+
+    .shoppage_grid{
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+}

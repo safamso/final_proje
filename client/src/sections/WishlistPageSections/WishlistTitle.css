@@ -1,0 +1,79 @@
+.wishlist_title{
+    width: 100%;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+    padding: 25px 40px;
+    margin-top: 100px;
+}
+
+.wishlist_title_product,
+.wishlist_title_price,
+.wishlist_title_quantity,
+.wishlist_title_total{
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.wishlist_title_product{
+    text-align: center;
+}
+
+.wishlist_title_price,
+.wishlist_title_quantity,
+.wishlist_title_total{
+    text-align: center;
+}
+
+
+/* =========================
+RESPONSİVE  TABLET
+========================= */
+
+@media (max-width: 992px) {
+
+    .wishlist_title {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    .wishlist_title_line{
+        display: none;
+    }
+
+    .wishlist_title_product,
+    .wishlist_title_price,
+    .wishlist_title_quantity,
+    .wishlist_title_total {
+        font-size: 15px;
+    }
+
+}
+
+/* =========================
+RESPONSİVE  MOBILE
+========================= */
+
+@media (max-width: 576px) {
+
+    .wishlist_title {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 15px;
+    }
+       .wishlist_title_line{
+        display: none;
+    }
+
+    .wishlist_title_product,
+    .wishlist_title_price,
+    .wishlist_title_quantity,
+    .wishlist_title_total {
+        font-size: 14px;
+    }
+
+}

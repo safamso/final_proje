@@ -1,0 +1,22 @@
+.about_counter_item {
+    flex: 1;
+    text-align: center;
+}
+
+.about_counter_number {
+    font-size: 44px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: var(--dark-color);
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.about_counter_title {
+    margin-top: 15px;
+    color: #808080;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: "Poppins", Arial, sans-serif;
+}

@@ -1,0 +1,148 @@
+.catagories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 25px;
+    margin: 100px auto;
+}
+
+/* BASE CARD */
+.catagorie_card {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s all ease;
+    position: relative;
+}
+
+/* HOVER */
+.catagorie_card:hover {
+    transform: scale(1.02);
+}
+
+/* GRID */
+.catagorie_fruit {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.catagorie_vagetables {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.catagorie_center {
+    grid-area: 1 / 2 / 3 / 3;
+    position: relative;
+}
+
+.catagorie_juices {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.catagorie_dried {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+/* CONTENT */
+.catagorie_info {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    text-align: center;
+}
+
+/* TITLE */
+.catagorie_info_name {
+    color: var(--primary-color);
+    font-family: "Lora", Georgia, serif;
+    font-style: italic;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* TEXT */
+.catagorie_info_text {
+    margin-top: 15px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+/* BUTTON */
+.catagorie_info_btn {
+    margin-top: 20px;
+    width: 120px;
+    height: 42px;
+    border-radius: 30px;
+    border: 1px solid #82ae46;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 15px;
+    font-family: "Poppins", Arial, sans-serif;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+/* BUTTON HOVER */
+.catagorie_info_btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.catagorie_fruit_title,
+.catagorie_dried_title,
+.catagorie_juices_title
+ {
+    width: 100px;
+    height: 30px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 88%;
+    color: var(--white);
+    font-size: 18px;
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.catagorie_vagetables_title {
+    width: 120px;
+    height: 30px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 88%;
+    color: var(--white);
+    font-size: 18px;
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px) {
+
+    .catagories {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .catagorie_fruit,
+    .catagorie_vagetables,
+    .catagorie_center,
+    .catagorie_juices,
+    .catagorie_dried {
+        grid-area: auto;
+        min-height: 250px;
+    }
+
+}

@@ -1,0 +1,152 @@
+/* CARD */
+.product_card{
+    width: 100%;
+    background-color: var(--white);
+    border: 1px solid #f0f0f0;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+
+/* CARD HOVER */
+.product_card:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* IMAGE WRAPPER */
+.product_card_image_wrapper{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* IMAGE */
+.product_card_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s all ease;
+}
+
+/* IMAGE HOVER */
+.product_card:hover .product_card_image{
+    transform: scale(1.08);
+}
+
+/* DISCOUNT */
+.product_card_discount{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 500;
+}
+
+/* CONTENT */
+.product_card_content{
+    padding: 20px;
+}
+
+/* TITLE */
+.product_card_title{
+    color: var(--dark-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* PRICES */
+.product_card_prices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s all ease;
+}
+
+/* OLD PRICE */
+.product_card_old_price{
+    text-decoration: line-through;
+    color: var(--gray);
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* CURRENT PRICE */
+.product_card_price{
+    color: var(--primary-color);
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* ICONS */
+.product_card_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: 0.4s all ease;
+}
+
+/* SHOW ICONS ON HOVER */
+.product_card:hover .product_card_icons{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* HIDE PRICE ON HOVER */
+.product_card:hover .product_card_prices{
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+/* ICON BUTTON */
+.product_card_icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+/* ICON HOVER */
+.product_card_icon:hover{
+    background-color: var(--dark-color);
+}
+
+/* RESPONSIVE */
+@media (max-width:576px){
+    .product_card_image_wrapper{
+        height: 220px;
+    }
+    .product_card_title{
+        font-size: 14px;
+    }
+
+}

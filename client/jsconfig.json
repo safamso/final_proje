@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    // "baseUrl": ".",  <-- Bu sətri silin və ya şərhə (comment) alın
+    "paths": {
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"]
+    }
+  }
+}
