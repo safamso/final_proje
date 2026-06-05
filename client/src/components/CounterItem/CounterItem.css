@@ -4,19 +4,20 @@
 }
 
 .about_counter_number {
-    font-size: 44px;
+    font-size: 30px;
     line-height: 1.2;
     font-weight: 400;
-    color: var(--dark-color);
+    color: black;
     font-family: "Poppins", Arial, sans-serif;
 }
 
 .about_counter_title {
     margin-top: 15px;
-    color: #808080;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 3px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.7);
     text-transform: uppercase;
+    letter-spacing: 1px;
     font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.8;
+    font-weight: 500;
 }

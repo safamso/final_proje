@@ -9,3 +9,5 @@ export * from "@components/Pagination/Pagination.jsx";
 export * from "@components/WishlistCard/WishlistCard.jsx";
 export * from "@components/HorizontalScroll/HorizontalScroll.jsx";
 export * from "@components/CounterItem/CounterItem.jsx";
+export * from "@components/BlogCard/BlogCard.jsx";
+export * from "@components/BlogSidebar/BlogSidebar.jsx";

@@ -5,13 +5,14 @@
     background-size: cover;
     background-position: center;
     padding: 120px 0;
+    opacity: 0.8;
 }
 
 .about_counter_wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
 }
 @media (max-width: 992px) {
 

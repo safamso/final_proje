@@ -18,8 +18,6 @@ export const ShopPage = () => {
             <PaginationSection />
             <Newsletter />
             <Footer />
-
-
         </div>
     )
 }

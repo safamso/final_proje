@@ -1,4 +1,5 @@
 import { useCounter } from "@/hooks";
+import "@components/CounterItem/CounterItem.css"
 
 export const CounterItem = ({ count, title }) => {
 

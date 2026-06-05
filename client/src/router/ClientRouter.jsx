@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { HomePage,ShopPage,WishlistPage,SingleProductPage,CartCard,AboutPage } from "@/pages";
+import { HomePage,ShopPage,WishlistPage,SingleProductPage,CartCard,AboutPage,BlogPage } from "@/pages";
 
 const ClientRouter  = () => {
     return (
@@ -12,7 +12,7 @@ const ClientRouter  = () => {
                 <Route path= "/shop/product-single" element={<SingleProductPage/>}/>
                 <Route path= "/Cart" element={<CartCard/>}/>
                 <Route path="/about" element={<AboutPage/>} />
-                <Route path="/blog" element={<div>BlogPage</div>} />
+                <Route path="/blog" element={<BlogPage/>} />
                 <Route path="/contact" element={<div>ContactPage</div>} />
  
 

@@ -1,0 +1,9 @@
+.blog_section_grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 90px 0;
+}
+.blog_section_grid_left{
+
+}

@@ -1,8 +1,9 @@
-import { Navbar, Newsletter, ShopPageHero } from "@/components";
+import { Footer, Navbar, Newsletter, ShopPageHero } from "@/components";
 //DB pageHero//
 import { pageHero } from "@/db/pageHero";
 //Sections//
-import { AboutWelcomeSection,AboutCounterSection } from "@/sections";
+import { AboutWelcomeSection, AboutCounterSection } from "@/sections";
+import { HomePageTestimonials, HomePageServices } from "@/sections/HomePageSections";
 
 export const AboutPage = () => {
     return (
@@ -11,8 +12,11 @@ export const AboutPage = () => {
             <ShopPageHero
                 title={pageHero.about.title} />
             <AboutWelcomeSection />
-            <Newsletter/>
-            <AboutCounterSection/>
+            <Newsletter />
+            <AboutCounterSection />
+            <HomePageTestimonials />
+            <HomePageServices />
+            <Footer />
 
 
 
