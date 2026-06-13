@@ -1,0 +1,13 @@
+.contact_info_section{
+    width: 100%;
+    height: auto;
+    background: #f7f6f2;
+    
+}
+.contact_info_section_grid{
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    padding: 50px 0;
+
+}

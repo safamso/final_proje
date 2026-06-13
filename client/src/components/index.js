@@ -11,3 +11,4 @@ export * from "@components/HorizontalScroll/HorizontalScroll.jsx";
 export * from "@components/CounterItem/CounterItem.jsx";
 export * from "@components/BlogCard/BlogCard.jsx";
 export * from "@components/BlogSidebar/BlogSidebar.jsx";
+export * from "@components/ContactInfoCard/ContactInfoCard.jsx"

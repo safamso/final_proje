@@ -1,0 +1,33 @@
+.contact_info_card{
+   width: 100%;
+    min-height: 145px;
+    background-color: white;
+}
+.contact_info_card_container{
+    padding: 24px;
+}
+.contact_info_card_title{
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray;
+    padding-right:10px;
+
+}
+.contact_info_card_info{
+     font-family: "Poppins", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: black;
+
+}
+@media (max-width:983px) {
+    .contact_info_card{
+        width: 150px;
+    height: 200px;
+
+    }
+    
+}

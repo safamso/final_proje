@@ -1,0 +1,90 @@
+.blogsidebar_card {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.blogsidebar_card_image_box {
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+     flex-shrink: 0;
+}
+
+.blogsidebar_card_image {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    overflow: hidden;   
+}
+
+.blogsidebar_card_content {
+    flex: 1;
+    display: block;
+    text-align: left;
+}
+
+.blogsidebar_card_meta {
+      display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.blogsidebar_card_date,
+.blogsidebar_card_author {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+    line-height: 1.8;
+}
+
+.blogsidebar_card_comment {
+    color: #b3b3b3;
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    transition: 0.3s all ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.blogsidebar_card_comment:hover {
+    color: black;
+}
+
+.blogsidebar_card_title {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: black;
+     margin-bottom: 10px;
+    transition: 0.3s all ease;
+
+}
+.blogsidebar_card_title:hover {
+    color: #82ae46;
+}
+@media (max-width:576px){
+
+    .blogsidebar_card{
+        gap: 10px;
+    }
+
+    .blogsidebar_card_image_box{
+        width: 70px;
+        height: 70px;
+    }
+
+    .blogsidebar_card_title{
+        font-size: 14px;
+    }
+
+    .blogsidebar_card_meta{
+        gap: 6px;
+    }
+}
+

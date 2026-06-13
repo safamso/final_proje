@@ -3,10 +3,16 @@ import "./BlogSidebar.css";
 
 //React Icons//
 import { IoSearch } from "react-icons/io5";
+//DB//
+import {
+    blogSideBarCard
+} from "@/db/blogSidebarCard.js";
+//BlogSidebarCard//
+import { BlogSidebarCard } from "@components/BlogSidebar/BlogSidebarCard.jsx";
 
 export const BlogSidebar = () => {
     return (
-        <aside className="blog_sidebar">
+        <section className="blog_sidebar">
             {/* Search */}
             <div className="blog_sidebar_box">
                 <div className="blog_sidebar_search">
@@ -26,17 +32,20 @@ export const BlogSidebar = () => {
                 </h3>
                 <ul className="blog_sidebar_list">
                     <li className="blog_sidebar_item">
-                        Vegetables (12)
+                       <span className="blog_sidebar_item_name">Vegetables</span> <span className="blog_sidebar_item_count">(12)</span>
                     </li>
+                    
                     <li className="blog_sidebar_item">
-                        Fruits (22)
+                       <span className="blog_sidebar_item_name"> Fruits</span> <span className="blog_sidebar_item_count"> (22)</span>
                     </li>
-                    <li className="blog_sidebar_item">
-                        Juice (37)
+                     <li className="blog_sidebar_item">
+                       <span className="blog_sidebar_item_name"> Juice</span> <span className="blog_sidebar_item_count"> (37)</span>
                     </li>
-                    <li className="blog_sidebar_item">
-                        Dries (42)
+            
+                     <li className="blog_sidebar_item">
+                       <span className="blog_sidebar_item_name">  Dries</span> <span className="blog_sidebar_item_count"> (42)</span>
                     </li>
+                                      
                 </ul>
             </div>
 
@@ -45,32 +54,16 @@ export const BlogSidebar = () => {
                 <h3 className="blog_sidebar_title">
                     Recent Blog
                 </h3>
-                <div className="blog_recent_item">
-                    <p className="blog_recent_title">
-                        Even the all-powerful Pointing has no control
-                    </p>
-                    <span className="blog_recent_date">
-                        July 20, 2019
-                    </span>
-                </div>
-
-                <div className="blog_recent_item">
-                    <p className="blog_recent_title">
-                        Far far away behind the word mountains
-                    </p>
-                    <span className="blog_recent_date">
-                        July 18, 2019
-                    </span>
-                </div>
-
-                <div className="blog_recent_item">
-                    <p className="blog_recent_title">
-                        Separated they live in Bookmarksgrove
-                    </p>
-                    <span className="blog_recent_date">
-                        July 15, 2019
-                    </span>
-                </div>
+                {blogSideBarCard.map((item) =>
+                    <BlogSidebarCard
+                        key={item.id}
+                        date={item.date}
+                        image={item.image}
+                        author={item.author}
+                        comments={item.comments}
+                        title={item.title}
+                    />
+                )}
             </div>
 
             {/* Tag Cloud */}
@@ -80,25 +73,42 @@ export const BlogSidebar = () => {
                 </h3>
                 <div className="blog_tags">
                     <span className="blog_tag">
-                        FRUITS
+                        fruits
                     </span>
                     <span className="blog_tag">
-                        VEGETABLES
+                        tomatoe
                     </span>
                     <span className="blog_tag">
-                        TOMATO
+                        mango
                     </span>
                     <span className="blog_tag">
-                        APPLE
+                        apple
                     </span>
                     <span className="blog_tag">
-                        FOOD
+                        carrots
                     </span>
                     <span className="blog_tag">
-                        JUICE
+                        orange
+                    </span>
+                     <span className="blog_tag">
+                        pepper
+                    </span>
+                     <span className="blog_tag">
+                        eggplant
                     </span>
                 </div>
             </div>
-        </aside>
+            <div className="blog_sidebar_box">
+                <h3 className="blog_sidebar_title">
+                    Paragraph
+                </h3>
+                <p className="blog_sidebar_paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!
+                </p>
+
+            </div>
+
+
+        </section>
     );
 };

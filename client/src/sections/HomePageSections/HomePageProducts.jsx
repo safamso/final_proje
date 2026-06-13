@@ -1,8 +1,28 @@
-import { products } from "@/db/product";
-import { ProductCard } from "@/components/ProductCard/ProductCard";
+
+import { useEffect, useState } from "react";
+import { ProductCard } from "@/components";
 import "@/sections/HomePageSections/HomePageProducts.css";
 
+
 export const HomePageProducts = () => {
+    const [products, setProducts] = useState([]);
+    useEffect( ()=>{
+     const getProducts = async() => { 
+        try{
+            const response = await fetch( 
+                "http://localhost:5000/api/products"
+            );
+            const data = await response.json();
+            setProducts(data.products);
+            }
+            catch (error){
+                console.log(error);
+
+            }
+            
+        };
+        getProducts();
+    }, []);
 
     return(
 
@@ -29,8 +49,8 @@ export const HomePageProducts = () => {
                 {products.map((item)=>(
 
                     <ProductCard
-                        key={item.id}
-                        id={item.id}
+                        key={item._id}
+                        id={item._id}
                         image={item.image}
                         title={item.title}
                         price={item.price}

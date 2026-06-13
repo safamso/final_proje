@@ -6,3 +6,5 @@ export * from "@/sections/CartPageSection/CartCouponSection.jsx";
 export * from "@/sections/AboutPageSections/AboutWelcomeSection.jsx";
 export * from "@/sections/AboutCounterSection/AboutCounterSection.jsx";
 export * from "@/sections/BlogPageSection/BlogPageSection.jsx";
+export * from "@/sections/ContactInfoSection/ContactInfoSection.jsx";
+export * from "@/sections/ContactFormSection/ContactFormSection.jsx";

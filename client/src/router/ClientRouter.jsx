@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { HomePage,ShopPage,WishlistPage,SingleProductPage,CartCard,AboutPage,BlogPage } from "@/pages";
+import { HomePage,ShopPage,WishlistPage,SingleProductPage,CartCard,AboutPage,BlogPage,ContactPage } from "@/pages";
 
 const ClientRouter  = () => {
     return (
@@ -13,7 +13,7 @@ const ClientRouter  = () => {
                 <Route path= "/Cart" element={<CartCard/>}/>
                 <Route path="/about" element={<AboutPage/>} />
                 <Route path="/blog" element={<BlogPage/>} />
-                <Route path="/contact" element={<div>ContactPage</div>} />
+                <Route path="/contact" element={<ContactPage/>} />
  
 
             </Routes>

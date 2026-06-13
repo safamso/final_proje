@@ -4,6 +4,41 @@
     gap: 25px;
     padding: 90px 0;
 }
-.blog_section_grid_left{
+
+.blog_section_grid_left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog_section_grid_right {
+    flex: 1;
+    display: block;
+    padding-left: 30px;
+
+}
+@media (max-width: 992px){
+
+    .blog_section_grid{
+        flex-direction: column;
+    }
+
+    .blog_section_grid_left,
+    .blog_section_grid_right{
+        width: 100%;
+    }
+
+    .blog_section_grid_right{
+        padding-left: 0;
+        margin-top: 50px;
+    }
+
+}
+@media (max-width: 576px){
+
+    .blog_section_grid{
+        padding: 60px 0;
+        gap: 40px;
+    }
 
 }

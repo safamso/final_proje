@@ -7,11 +7,12 @@
 }
 
 .blog_sidebar_title {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 25px;
-    color: var(--dark-color);
+   line-height: 1.5;
+    font-weight: 400;
+    color: #000000;
     font-family: "Poppins", Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
 .blog_sidebar_search {
@@ -24,14 +25,17 @@
     padding: 0 50px 0 15px;
     border: 1px solid rgba(0,0,0,0.1);
     outline: none;
+    color: black;
+
 }
 
 .blog_sidebar_search_icon {
-    position: absolute;
-    right: 15px;
+  position: absolute;
     top: 50%;
+    right: 20px;
     transform: translateY(-50%);
-    color: gray;
+    color: #999;
+    font-size: 18px;
 }
 
 .blog_sidebar_list {
@@ -39,17 +43,30 @@
 }
 
 .blog_sidebar_item {
+    display: flex;
+    justify-content: space-between;
     padding: 12px 0;
     border-bottom: 1px solid rgba(0,0,0,0.08);
-    font-size: 15px;
+   
+}
+.blog_sidebar_item_name{
+     font-size: 15px;
+    color: black;
+    cursor: pointer;
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.8;
+    font-weight: 400;
+
+}
+.blog_sidebar_item_count{
+     font-size: 15px;
     color: gray;
     cursor: pointer;
-    transition: 0.3s;
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.8;
+    font-weight: 400;
 }
 
-.blog_sidebar_item:hover {
-    color: var(--primary-color);
-}
 
 .blog_recent_item {
     margin-bottom: 20px;
@@ -77,15 +94,40 @@
 .blog_tag {
     border: 1px solid rgba(0,0,0,0.1);
     padding: 8px 14px;
-
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
-
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease all;
+    text-transform: uppercase;
+    font-family: "Poppins", Arial, sans-serif;
 }
 
 .blog_tag:hover {
     background-color: var(--primary-color);
     color: white;
+}
+.blog_sidebar_paragraph{
+    font-size: 15px;
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray;
+       margin-top: 10px;
+}
+@media (max-width: 992px){
+
+    .blog_sidebar{
+        margin-top: 50px;
+    }
+}
+@media (max-width: 576px){
+
+    .blog_sidebar_title{
+        font-size: 18px;
+    }
+
+    .blog_tag{
+        font-size: 10px;
+        padding: 6px 10px;
+    }
 }

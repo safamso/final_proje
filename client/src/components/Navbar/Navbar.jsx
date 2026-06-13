@@ -62,7 +62,7 @@ const sticky = useStickyNavbar();
 
             <Link to = "/about" className="navbar_menu_item" href="">About</Link>
             <Link to = "/blog" className="navbar_menu_item" href="">Blog</Link>
-            <Link className="navbar_menu_item" href="">Contact</Link>
+            <Link to ="/contact" className="navbar_menu_item" href="">Contact</Link>
             <Link className="navbar_menu_item cart" href="">
               <PiShoppingCartFill /> [0]
             </Link>
